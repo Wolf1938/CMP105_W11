@@ -9,6 +9,9 @@ Level::Level(sf::RenderWindow* hwnd, Input* in, GameState* gs, AudioManager* aud
 
 	// initialise game objects
 	audio->addMusic("sfx/cantina.ogg", "cantina");
+	audio->addSound("sfx/SMB_jump-small.ogg", "jump");
+	audio->addSound("sfx/smb_1-up.ogg", "up");
+	audio->playMusicbyName("cantina");
 }
 
 Level::~Level()

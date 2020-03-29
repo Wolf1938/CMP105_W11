@@ -16,5 +16,5 @@ public:
 	State getCurrentState();
 
 protected:
-	State currentState;
+	State currentState = State::LEVEL;
 };
